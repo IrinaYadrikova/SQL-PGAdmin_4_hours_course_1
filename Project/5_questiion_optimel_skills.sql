@@ -36,7 +36,7 @@ GROUP BY
      skills_dim.skill_id
 )
 SELECT 
-    skills_demand.skill_id,
+
     skills_demand.skills,
     demand_count,
     avg_salary
@@ -47,7 +47,8 @@ WHERE
     demand_count > 20
 ORDER BY 
      avg_salary DESC,
-     demand_count DESC;
+     demand_count DESC
+     LIMIT 10;
 
      /*
     SELECT
