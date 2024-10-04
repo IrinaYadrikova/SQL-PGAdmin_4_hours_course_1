@@ -215,8 +215,7 @@ Golang – Gaining popularity in data engineering roles for backend and system-l
 
 Combining insights from demand and salary data, this query aimed to poin the skiils that are both in hight demand and well-paied.
 
-```sql
-
+``sql
 WITH skills_demand AS (
  SELECT
     skills_dim.skill_id,
@@ -258,7 +257,8 @@ WHERE
 ORDER BY 
      avg_salary DESC,
      demand_count DESC;
-
+```
+```sql
     
     SELECT
         skills_dim.skill_id,
@@ -280,7 +280,6 @@ ORDER BY
         avg_salary DESC, demand_count DESC
     LIMIT 25
      
-   
 ```
 *Table of the most optimal skills for a data analyst role by salary*
 | Skills    | Demand Count | Average Salary ($) |
